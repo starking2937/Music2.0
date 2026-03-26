@@ -166,7 +166,56 @@ button {
     cursor: pointer;
     transition: 0.3s;
 }
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
 
+    /* CENTER EVERYTHING */
+    .player {
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* BIGGER TITLE */
+    h2 {
+        font-size: 20px;
+    }
+
+    /* COVER IMAGE */
+    .cover {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* SONG NAME */
+    #songName {
+        font-size: 16px;
+    }
+
+    /* PROGRESS BAR */
+    #progress {
+        width: 90%;
+    }
+
+    /* BUTTONS BIGGER */
+    .buttons button {
+        font-size: 20px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* HOME BUTTONS BIGGER */
+    .home button {
+        width: 90%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    /* SONG LIST HIDDEN (optional) */
+    .songList {
+        display: none;
+    }
+}
 .player button:hover {
     background: rgba(255,255,255,0.3);
     transform: scale(1.05);
