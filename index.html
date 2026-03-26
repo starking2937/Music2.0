@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<h3>❤️ for MY LOVE ALLU</h3>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <div id="home" class="home">
+        <h1>🎵 Choose Mood</h1>
+        <button onclick="openPlaylist('spicy')">🌶 Spicy</button>
+        <button onclick="openPlaylist('romantic')">❤️ Romantic</button>
+    </div>
+
+    <!-- PLAYER -->
+   <div id="playerScreen" class="player" style="display:none;">
+
+    <h2 id="playlistTitle"></h2>
+
+    <div class="container">
+
+        <!-- LEFT: SONG LIST -->
+        <div class="songList" id="songList"></div>
+
+        <!-- RIGHT: PLAYER -->
+        <div class="playerBox">
+
+            <img id="cover" class="cover">
+
+            <p id="songName"></p>
+
+            <input type="range" id="progress" value="0">
+
+            <div class="buttons">
+                <button onclick="prevSong()">⏮</button>
+                <button onclick="playSong()">▶️</button>
+                <button onclick="pauseSong()">⏸</button>
+                <button onclick="nextSong()">⏭</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button onclick="goBack()">⬅ Back</button>
+
+</div>
+
+    </div>
+
+    <audio id="player"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
