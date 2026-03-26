@@ -25,9 +25,10 @@ body::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
+    min-height: 100vh; /* IMPORTANT */
+    padding: 20px;
 }
-
 /* TITLE */
 h2 {
     margin-bottom: 10px;
@@ -219,4 +220,23 @@ button {
 .player button:hover {
     background: rgba(255,255,255,0.3);
     transform: scale(1.05);
+}
+@media (max-width: 768px) {
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .buttons button {
+        font-size: 22px;
+        padding: 15px 18px;
+        margin: 8px;
+    }
+
+    .cover {
+        width: 200px;
+        height: 200px;
+    }
 }
